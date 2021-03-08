@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Eze-Chukwuka/static/css/main.da23d672.chunk.css",
-    "main.js": "/Eze-Chukwuka/static/js/main.e2dfd4a7.chunk.js",
-    "main.js.map": "/Eze-Chukwuka/static/js/main.e2dfd4a7.chunk.js.map",
+    "main.js": "/Eze-Chukwuka/static/js/main.e2c42aa4.chunk.js",
+    "main.js.map": "/Eze-Chukwuka/static/js/main.e2c42aa4.chunk.js.map",
     "runtime-main.js": "/Eze-Chukwuka/static/js/runtime-main.4c667976.js",
     "runtime-main.js.map": "/Eze-Chukwuka/static/js/runtime-main.4c667976.js.map",
     "static/js/2.e4b3f3f0.chunk.js": "/Eze-Chukwuka/static/js/2.e4b3f3f0.chunk.js",
@@ -21,6 +21,6 @@
     "static/js/runtime-main.4c667976.js",
     "static/js/2.e4b3f3f0.chunk.js",
     "static/css/main.da23d672.chunk.css",
-    "static/js/main.e2dfd4a7.chunk.js"
+    "static/js/main.e2c42aa4.chunk.js"
   ]
 }
