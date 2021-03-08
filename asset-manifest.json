@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Eze-Chukwuka/static/css/main.da23d672.chunk.css",
+    "main.js": "/Eze-Chukwuka/static/js/main.e2dfd4a7.chunk.js",
+    "main.js.map": "/Eze-Chukwuka/static/js/main.e2dfd4a7.chunk.js.map",
+    "runtime-main.js": "/Eze-Chukwuka/static/js/runtime-main.4c667976.js",
+    "runtime-main.js.map": "/Eze-Chukwuka/static/js/runtime-main.4c667976.js.map",
+    "static/js/2.e4b3f3f0.chunk.js": "/Eze-Chukwuka/static/js/2.e4b3f3f0.chunk.js",
+    "static/js/2.e4b3f3f0.chunk.js.map": "/Eze-Chukwuka/static/js/2.e4b3f3f0.chunk.js.map",
+    "static/js/3.c78d98a9.chunk.js": "/Eze-Chukwuka/static/js/3.c78d98a9.chunk.js",
+    "static/js/3.c78d98a9.chunk.js.map": "/Eze-Chukwuka/static/js/3.c78d98a9.chunk.js.map",
+    "index.html": "/Eze-Chukwuka/index.html",
+    "static/css/main.da23d672.chunk.css.map": "/Eze-Chukwuka/static/css/main.da23d672.chunk.css.map",
+    "static/js/2.e4b3f3f0.chunk.js.LICENSE.txt": "/Eze-Chukwuka/static/js/2.e4b3f3f0.chunk.js.LICENSE.txt",
+    "static/media/chukky.844eee34.png": "/Eze-Chukwuka/static/media/chukky.844eee34.png",
+    "static/media/eze-chukwuka.7f01b092.jpg": "/Eze-Chukwuka/static/media/eze-chukwuka.7f01b092.jpg",
+    "static/media/jd.94a5d7f3.png": "/Eze-Chukwuka/static/media/jd.94a5d7f3.png",
+    "static/media/tedxapapa.0b163296.png": "/Eze-Chukwuka/static/media/tedxapapa.0b163296.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4c667976.js",
+    "static/js/2.e4b3f3f0.chunk.js",
+    "static/css/main.da23d672.chunk.css",
+    "static/js/main.e2dfd4a7.chunk.js"
+  ]
+}
