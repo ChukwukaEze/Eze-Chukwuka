@@ -30,6 +30,10 @@
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body > div > div{
     //padding: 15px;
 }
@@ -321,7 +325,7 @@ ul{
 
 
 .profile-page{
-    display: none;
+    //display: none;
 }
 
 .error-profile{
@@ -343,10 +347,10 @@ ul{
     }
 }
 
-.error-profile, main{
-    display: grid;
-    place-content: center;
-}
+// .error-profile, main{
+//     display: grid;
+//     place-content: center;
+// }
 
 
 @media only screen and (max-width: 768px){

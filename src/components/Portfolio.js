@@ -53,7 +53,7 @@ function Portfolio() {
 
             //Links
             git: "",
-            siteLink: "",
+            siteLink: "https://chukkywang.github.io/Eze-Chukwuka/",
             stack: "React",
             stackIMG: <FaReact/>
         },
