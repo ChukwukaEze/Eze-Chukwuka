@@ -35,7 +35,7 @@ function Main(props) {
                 </div>
                 <div className="for_the_web">
                     <h2>
-                        Curate. <br/> Code.
+                        Connecting with Codes.
                     </h2>
                     <div className="welcome_note">
                         <article>
