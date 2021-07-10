@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import DisplayPicture from '../../images/eze-chukwuka.jpg'
 import {FiDownloadCloud, FiXCircle, FiArrowRight, FiGithub, FiLinkedin, FiTwitter, FiChevronRight} from 'react-icons/fi'
 import { FaCss3, FaGit, FaGoogle, FaHtml5, FaJs, FaLaravel, FaLink, FaNodeJs, FaPython, FaReact, FaSass, FaWhatsapp } from 'react-icons/fa'
-import {BsArrowRight, BsThreeDots} from 'react-icons/bs'
+import {BsArrowRight, BsStarFill, BsThreeDots} from 'react-icons/bs'
 import JDev from '../../images/jd.png';
 import TEDxApapa from '../../images/tedxapapa.png'
 import Chukky from '../../images/chukky.png'
@@ -11,18 +11,18 @@ function Contact(props) {
     const devProjects = ([
         {
             //Image Properties
-            devImg: JDev,
-            devAlt: "JDi",
+            devImg: "",
+            devAlt: "",
 
             //Project Details
-            project: "JDi",
-            projectDes: "JDi is an insurance fun project I built with Laravel. It comes with all functionalities: User Authentication (Create Account, Login, and Dashboard). It also comes with the added feature that calls to an API to verify the BVN presented by users.",
+            project: "Zuri Team",
+            projectDes: "Built out an alike version of Zuri Team and their sub urls; Zuri Training and Zuri Interships. This site was built to take and store data, and its has an advanced routing and suspense process.",
 
             //Links
             git: "",
-            siteLink: "http://jd-backend.herokuapp.com/",
-            stack: "Laravel",
-            stackIMG: <FaLaravel/>
+            siteLink: "https://zuri-site.web.app",
+            stack: "React",
+            stackIMG: <FaReact/>
         },
 
         {
@@ -39,6 +39,22 @@ function Contact(props) {
             siteLink: "https://tedxapapa.com",
             stack: "React",
             stackIMG: <FaReact/>
+        },
+
+        {
+            //Image Properties
+            devImg: JDev,
+            devAlt: "JDi",
+
+            //Project Details
+            project: "JDi",
+            projectDes: "JDi is an insurance fun project I built with Laravel. It comes with all functionalities: User Authentication (Create Account, Login, and Dashboard). It also comes with the added feature that calls to an API to verify the BVN presented by users.",
+
+            //Links
+            git: "",
+            siteLink: "http://jd-backend.herokuapp.com/",
+            stack: "Laravel",
+            stackIMG: <FaLaravel/>
         },
 
 
@@ -62,7 +78,7 @@ function Contact(props) {
     return (
           <main className="contact closed">
                 <div className="contact_body">
-                    <div onClick={() => props.handleClick(false)}><FiXCircle/></div>
+                    <div></div>
                     <div className="intro">
                         <img src={DisplayPicture} alt="" className="display_picture" />
                         <div className="name_title">
@@ -132,6 +148,9 @@ function Contact(props) {
                             <p>Here are some of the stacks I work with more often.</p>
                             <Stacks/>
                         </div>
+                        <div className="star" style={{textAlign: 'center', marginTop: '25px'}}>
+                            <BsStarFill/><BsStarFill/><BsStarFill/>
+                        </div>
                     </div>
                 </div>
           </main>
@@ -178,6 +197,12 @@ function Stacks() {
             key: '6',
             stack: <FaLink/>,
             stackName: 'REST APIs',
+            stackStar: 'Core',
+        },
+        {
+            key: '6.5',
+            stack: <FaLink/>,
+            stackName: 'Context APIs',
             stackStar: 'Core',
         },
         {

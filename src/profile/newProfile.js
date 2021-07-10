@@ -17,14 +17,14 @@ function NewProfile() {
 
     return (
         <section className="section">
-            <Main nowOpen={isOpen => setIsOpen(!isOpen)}/>
+            <Contact/>
 
-            {
+            {/* {
                 dashboardtransitions((style, item) => 
                 item && <animated.div style={style}> 
                             <Contact handleClick={handleClick}/> 
                         </animated.div>
-            )}
+            )} */}
 
             
         </section>

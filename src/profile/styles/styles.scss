@@ -402,11 +402,11 @@
 }
 
 
-.projects_rack .other_items:not(:first-child) .project_item_title span *{
+.projects_rack .other_items:not(:nth-child(3)) .project_item_title span *{
         color: #61dafb;
 }
 
-.projects_rack .other_items:first-child .project_item_title span * {
+.projects_rack .other_items:nth-child(3) .project_item_title span * {
     color: #ff2d20;
     font-weight: 700;
 }

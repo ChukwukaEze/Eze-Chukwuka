@@ -35,7 +35,7 @@ function Main(props) {
                 </div>
                 <div className="for_the_web">
                     <h2>
-                        Connecting with Codes.
+                        {/* Connecting with Codes */}
                     </h2>
                     <div className="welcome_note">
                         <article>
@@ -46,7 +46,7 @@ function Main(props) {
                     </div>
                     <div className="buttons">
                         <button onClick={() => props.nowOpen()}>My Projects</button>
-                        <button disabled>Non Developer</button>
+                        {/* <button disabled>Non Developer</button> */}
                     </div>
                     
                 </div>
