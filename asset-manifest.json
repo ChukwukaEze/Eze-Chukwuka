@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Eze-Chukwuka/static/css/main.c1d41d8f.chunk.css",
-    "main.js": "/Eze-Chukwuka/static/js/main.c1bc7124.chunk.js",
-    "main.js.map": "/Eze-Chukwuka/static/js/main.c1bc7124.chunk.js.map",
+    "main.css": "/Eze-Chukwuka/static/css/main.5ed51123.chunk.css",
+    "main.js": "/Eze-Chukwuka/static/js/main.b1d8904b.chunk.js",
+    "main.js.map": "/Eze-Chukwuka/static/js/main.b1d8904b.chunk.js.map",
     "runtime-main.js": "/Eze-Chukwuka/static/js/runtime-main.8debc702.js",
     "runtime-main.js.map": "/Eze-Chukwuka/static/js/runtime-main.8debc702.js.map",
     "static/js/2.ddf9870b.chunk.js": "/Eze-Chukwuka/static/js/2.ddf9870b.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.c3ebca03.chunk.js": "/Eze-Chukwuka/static/js/3.c3ebca03.chunk.js",
     "static/js/3.c3ebca03.chunk.js.map": "/Eze-Chukwuka/static/js/3.c3ebca03.chunk.js.map",
     "index.html": "/Eze-Chukwuka/index.html",
-    "static/css/main.c1d41d8f.chunk.css.map": "/Eze-Chukwuka/static/css/main.c1d41d8f.chunk.css.map",
+    "static/css/main.5ed51123.chunk.css.map": "/Eze-Chukwuka/static/css/main.5ed51123.chunk.css.map",
     "static/js/2.ddf9870b.chunk.js.LICENSE.txt": "/Eze-Chukwuka/static/js/2.ddf9870b.chunk.js.LICENSE.txt",
     "static/media/chukky.844eee34.png": "/Eze-Chukwuka/static/media/chukky.844eee34.png",
     "static/media/eze-chukwuka.7f01b092.jpg": "/Eze-Chukwuka/static/media/eze-chukwuka.7f01b092.jpg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.8debc702.js",
     "static/js/2.ddf9870b.chunk.js",
-    "static/css/main.c1d41d8f.chunk.css",
-    "static/js/main.c1bc7124.chunk.js"
+    "static/css/main.5ed51123.chunk.css",
+    "static/js/main.b1d8904b.chunk.js"
   ]
 }
