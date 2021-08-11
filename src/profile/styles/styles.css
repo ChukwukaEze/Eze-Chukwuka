@@ -609,8 +609,24 @@
   width: 100%;
   margin: 1px auto;
   font-size: 14px;
-  padding: 3px 5px;
+  padding: 8px;
   max-width: 800px;
+}
+
+.holder_intro input::-webkit-input-placeholder {
+  font-size: 12px;
+}
+
+.holder_intro input:-ms-input-placeholder {
+  font-size: 12px;
+}
+
+.holder_intro input::-ms-input-placeholder {
+  font-size: 12px;
+}
+
+.holder_intro input::placeholder {
+  font-size: 12px;
 }
 
 .search_fie {
@@ -626,5 +642,6 @@ input {
   outline: none;
   padding: 7.5px;
   border-radius: 6px;
+  border: none;
 }
 /*# sourceMappingURL=styles.css.map */

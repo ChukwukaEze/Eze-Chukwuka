@@ -110,15 +110,13 @@ function Contact(props) {
     const handleChange = e => {
         e.preventDefault();
         setFilterValues(e.target.value);   
-    //     setDevProjects(filterRoles)
-    //     console.log('firstProject', devProjects)
-        
-    // console.log("filter", filterRoles)
     
     }
 
     const lowerCaseValues = filterValues.toLowerCase()
 
+
+    //Fillter Handler
     if(filterValues.length > 0){
         devProjects = devProjects.filter(roles => {
             return(
@@ -130,32 +128,6 @@ function Contact(props) {
     }else {
         <p>No Result</p>
     }
-
-
-    
-
-
-    
-    //devProjects(filterRoles)
-    
-    console.log("dev", devProjects)
-
-    
-
-    
-
-    //console.log(devProjects)
-
-    
-        
-
-    
-
-    
-    
-
-    
-    
 
 
     return (
@@ -188,10 +160,7 @@ function Contact(props) {
                         
                         <div className="nav">
                             <div className="onsocials">
-                                <a>
-                                    <small>v.1</small>
-                                </a>
-                                <a rel="noreferrer"  target="_blank" href="https://drive.google.com/file/d/1rAV5UAAiM8r5lgmsYJjm2wWRH3QmWS-2/view?usp=sharing">
+                                <a rel="noreferrer"  target="_blank" href="https://drive.google.com/file/d/1YiQu2GYCAGEJNmpilF93kGbaeDdWJGep/view?usp=sharing">
                                     <FiDownloadCloud/>
                                 </a>
                                 <a rel="noreferrer"  target="_blank" href="https://github.com/ChukkyWang">
