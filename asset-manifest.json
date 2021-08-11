@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Eze-Chukwuka/static/css/main.fadc0fc0.chunk.css",
-    "main.js": "/Eze-Chukwuka/static/js/main.1d348676.chunk.js",
-    "main.js.map": "/Eze-Chukwuka/static/js/main.1d348676.chunk.js.map",
-    "runtime-main.js": "/Eze-Chukwuka/static/js/runtime-main.93e5134a.js",
-    "runtime-main.js.map": "/Eze-Chukwuka/static/js/runtime-main.93e5134a.js.map",
-    "static/js/2.cf7977e3.chunk.js": "/Eze-Chukwuka/static/js/2.cf7977e3.chunk.js",
-    "static/js/2.cf7977e3.chunk.js.map": "/Eze-Chukwuka/static/js/2.cf7977e3.chunk.js.map",
-    "static/js/3.7ab19b81.chunk.js": "/Eze-Chukwuka/static/js/3.7ab19b81.chunk.js",
-    "static/js/3.7ab19b81.chunk.js.map": "/Eze-Chukwuka/static/js/3.7ab19b81.chunk.js.map",
+    "main.css": "/Eze-Chukwuka/static/css/main.5695fa96.chunk.css",
+    "main.js": "/Eze-Chukwuka/static/js/main.893e95b1.chunk.js",
+    "main.js.map": "/Eze-Chukwuka/static/js/main.893e95b1.chunk.js.map",
+    "runtime-main.js": "/Eze-Chukwuka/static/js/runtime-main.8debc702.js",
+    "runtime-main.js.map": "/Eze-Chukwuka/static/js/runtime-main.8debc702.js.map",
+    "static/js/2.ddf9870b.chunk.js": "/Eze-Chukwuka/static/js/2.ddf9870b.chunk.js",
+    "static/js/2.ddf9870b.chunk.js.map": "/Eze-Chukwuka/static/js/2.ddf9870b.chunk.js.map",
+    "static/js/3.c3ebca03.chunk.js": "/Eze-Chukwuka/static/js/3.c3ebca03.chunk.js",
+    "static/js/3.c3ebca03.chunk.js.map": "/Eze-Chukwuka/static/js/3.c3ebca03.chunk.js.map",
     "index.html": "/Eze-Chukwuka/index.html",
-    "static/css/main.fadc0fc0.chunk.css.map": "/Eze-Chukwuka/static/css/main.fadc0fc0.chunk.css.map",
-    "static/js/2.cf7977e3.chunk.js.LICENSE.txt": "/Eze-Chukwuka/static/js/2.cf7977e3.chunk.js.LICENSE.txt",
+    "static/css/main.5695fa96.chunk.css.map": "/Eze-Chukwuka/static/css/main.5695fa96.chunk.css.map",
+    "static/js/2.ddf9870b.chunk.js.LICENSE.txt": "/Eze-Chukwuka/static/js/2.ddf9870b.chunk.js.LICENSE.txt",
     "static/media/chukky.844eee34.png": "/Eze-Chukwuka/static/media/chukky.844eee34.png",
     "static/media/eze-chukwuka.7f01b092.jpg": "/Eze-Chukwuka/static/media/eze-chukwuka.7f01b092.jpg",
     "static/media/styles.css": "/Eze-Chukwuka/static/media/footer.3970f3b5.webp",
@@ -19,9 +19,9 @@
     "static/media/tedxapapa.0b163296.png": "/Eze-Chukwuka/static/media/tedxapapa.0b163296.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.93e5134a.js",
-    "static/js/2.cf7977e3.chunk.js",
-    "static/css/main.fadc0fc0.chunk.css",
-    "static/js/main.1d348676.chunk.js"
+    "static/js/runtime-main.8debc702.js",
+    "static/js/2.ddf9870b.chunk.js",
+    "static/css/main.5695fa96.chunk.css",
+    "static/js/main.893e95b1.chunk.js"
   ]
 }
