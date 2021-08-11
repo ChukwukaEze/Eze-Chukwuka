@@ -1,14 +1,14 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import DisplayPicture from '../../images/eze-chukwuka.jpg'
-import {FiDownloadCloud, FiXCircle, FiArrowRight, FiGithub, FiLinkedin, FiTwitter, FiChevronRight} from 'react-icons/fi'
-import { FaCss3, FaGit, FaGoogle, FaHtml5, FaJs, FaLaravel, FaLink, FaNodeJs, FaPython, FaReact, FaSass, FaWhatsapp } from 'react-icons/fa'
+import {FiDownloadCloud, FiArrowRight, FiGithub, FiLinkedin, FiTwitter} from 'react-icons/fi'
+import { FaCss3, FaGit, FaGoogle, FaHtml5, FaJs, FaLaravel, FaLink, FaNodeJs, FaReact, FaSass, FaWhatsapp } from 'react-icons/fa'
 import {BsArrowRight, BsStarFill, BsThreeDots} from 'react-icons/bs'
 import JDev from '../../images/jd.png';
 import TEDxApapa from '../../images/tedxapapa.png'
 import Chukky from '../../images/chukky.png'
 
 function Contact(props) {
-    const devProjects = ([
+    let devProjects = ([
         {
             //Image Properties
             devImg: "",
@@ -21,6 +21,21 @@ function Contact(props) {
             //Links
             git: "",
             siteLink: "https://zuri-site.web.app",
+            stack: "React",
+            stackIMG: <FaReact/>
+        },
+        {
+            //Image Properties
+            devImg: "",
+            devAlt: "",
+
+            //Project Details
+            project: "Electricity Web Evaluator",
+            projectDes: `Built with React and Charts Dependencies, this project fetches electricity data from an API to make it easier to compare annual electricity generation variables.`,
+
+            //Links
+            git: "",
+            siteLink: "https://nextier-fe.web.app/",
             stack: "React",
             stackIMG: <FaReact/>
         },
@@ -75,45 +90,147 @@ function Contact(props) {
         },
 
     ])
+
+    const [small, setSmall] = useState(false);
+    const [filterValues, setFilterValues] = useState('')
+
+
+    //Onscroll Effect
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            window.addEventListener("scroll", () =>
+                setSmall(window.pageYOffset > 200)
+            );
+        }
+    }, []);
+
+    
+
+    //OnChange 
+    const handleChange = e => {
+        e.preventDefault();
+        setFilterValues(e.target.value);   
+    //     setDevProjects(filterRoles)
+    //     console.log('firstProject', devProjects)
+        
+    // console.log("filter", filterRoles)
+    
+    }
+
+    const lowerCaseValues = filterValues.toLowerCase()
+
+    if(filterValues.length > 0){
+        devProjects = devProjects.filter(roles => {
+            return(
+                roles.project.toLowerCase().match(lowerCaseValues) || 
+                roles.projectDes.toLowerCase().match(lowerCaseValues) || 
+                roles.stack.toLowerCase().match(lowerCaseValues)
+            )
+        });
+    }else {
+        <p>No Result</p>
+    }
+
+
+    
+
+
+    
+    //devProjects(filterRoles)
+    
+    console.log("dev", devProjects)
+
+    
+
+    
+
+    //console.log(devProjects)
+
+    
+        
+
+    
+
+    
+    
+
+    
+    
+
+
     return (
           <main className="contact closed">
                 <div className="contact_body">
-                    <div></div>
+                    {small && <div className= {`scroll_intro ${small && 'holder_intro'}`}>
+                                        <div className="small_header_content">
+                                            <div className="name_title">
+                                                <h3>Eze Chukwuka</h3>
+                                            </div>
+                                            <div className="search_fie">
+                                                <input 
+                                                    type="text" 
+                                                    name="filterValue" 
+                                                    id="" 
+                                                    value={filterValues}
+                                                    onChange={handleChange}
+                                                    placeholder="Search for a Project or Stack"
+                                                />
+                                            </div>
+
+                                        </div>
+                                </div>}
                     <div className="intro">
                         <img src={DisplayPicture} alt="" className="display_picture" />
                         <div className="name_title">
                             <h3>Eze Chukwuka</h3>
                             <p>Software Engineer</p>
                         </div>
+                        
                         <div className="nav">
                             <div className="onsocials">
-                                <a target="_blank" href="https://drive.google.com/file/d/1rAV5UAAiM8r5lgmsYJjm2wWRH3QmWS-2/view?usp=sharing">
+                                <a>
+                                    <small>v.1</small>
+                                </a>
+                                <a rel="noreferrer"  target="_blank" href="https://drive.google.com/file/d/1rAV5UAAiM8r5lgmsYJjm2wWRH3QmWS-2/view?usp=sharing">
                                     <FiDownloadCloud/>
                                 </a>
-                                <a target="_blank" href="https://github.com/ChukkyWang">
+                                <a rel="noreferrer"  target="_blank" href="https://github.com/ChukkyWang">
                                     <FiGithub/>
                                 </a>
-                                <a target="_blank" href="https://twitter.com/TheChukkyEze">
+                                <a rel="noreferrer"  target="_blank" href="https://twitter.com/TheChukkyEze">
                                     <FiTwitter/>
                                 </a>
-                                <a target="_blank" href="https://www.linkedin.com/in/eze-chukwuka">
+                                <a rel="noreferrer"  target="_blank" href="https://www.linkedin.com/in/eze-chukwuka">
                                     <FiLinkedin/>
                                 </a>
                             </div>
                         </div>
                     </div>
+                    
                     <div className="_contact">  
                         <div className="main_contact_body">
                             <h2 className="headings_contact">
-                                My Projects
+                                My Projects 
                             </h2>
                             <p>Here are some of my deeply inspiring projects.</p>
+                            
+                                <div className="search_fie">
+                                <input 
+                                    type="text" 
+                                    name="filterValue" 
+                                    id="" 
+                                    value={filterValues}
+                                    onChange={handleChange}
+                                    placeholder="Search for a Project or Stack"
+                                />
+                                </div>
+                            
                             <div className="projects_rack">
                                 {devProjects.map((devProject) => (
                                     <div key={devProject.project} className="project_item other_items">
                                         <div className="project_item_title">
                                             <h3>{devProject.project}</h3>
-                                            <span className="stack-icon">
+                                            <span className={`stack-icon ${devProject.stack === 'Laravel' ? 'laravel_color' : 'react_color'}`}>
                                                 {devProject.stackIMG} {devProject.stack}
                                             </span>
                                         </div>
@@ -121,18 +238,18 @@ function Contact(props) {
                                         <div className="project-note">
                                             <p>{devProject.projectDes}</p>
                                         </div>
-                                        <a href={devProject.siteLink} target="_blank"> Visit {devProject.project} <FiArrowRight/></a>
+                                        <a href={devProject.siteLink} rel="noreferrer" target="_blank"> Visit {devProject.project} <FiArrowRight/></a>
                                     </div>
                                 ))}
-
+                                
                                 <div className="project_item next-project">
                                     <p>Chat about your next project</p>
                                     <div>
                                         <h3>Let's</h3>
                                         <h3>Collaborate <BsArrowRight/></h3>
                                         <div className="contact-bib">
-                                            <a href="mailto:ezechukwukae@gmail.com"><FaGoogle/></a>
-                                            <a href="https://wa.link/7j9t00" target="_blank"><FaWhatsapp/></a>
+                                            <a rel="noreferrer"  href="mailto:ezechukwukae@gmail.com"><FaGoogle/></a>
+                                            <a rel="noreferrer"  href="https://wa.link/7j9t00" target="_blank"><FaWhatsapp/></a>
                                         </div>
                                     </div>
                                 </div>

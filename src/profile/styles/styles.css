@@ -1,3 +1,8 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .section {
   position: relative;
 }
@@ -132,7 +137,7 @@
 
 .closed {
   height: auto;
-  background-color: #04050d;
+  background-color: #1E1E1E;
   color: White;
   -webkit-transition: 0.3ms ease-in-out;
   transition: 0.3ms ease-in-out;
@@ -321,16 +326,6 @@
   color: #04050d;
 }
 
-.contact_body > div:first-child, .main_contact_body > div:first-child {
-  text-align: right;
-  margin: 15px 10px;
-}
-
-.contact_body > div:first-child *, .main_contact_body > div:first-child * {
-  font-size: 20px;
-  cursor: pointer;
-}
-
 @media only screen and (max-width: 768px) {
   .contact_body, .main_contact_body {
     padding: 20px;
@@ -373,6 +368,8 @@
   padding: 25px;
   cursor: pointer;
   margin: 0px;
+  -webkit-box-sizing: unset;
+          box-sizing: unset;
 }
 
 .other_items .project_item_title {
@@ -407,11 +404,11 @@
   font-size: 18px;
 }
 
-.projects_rack .other_items:not(:nth-child(3)) .project_item_title span * {
+.react_color * {
   color: #61dafb;
 }
 
-.projects_rack .other_items:nth-child(3) .project_item_title span * {
+.laravel_color * {
   color: #ff2d20;
   font-weight: 700;
 }
@@ -563,5 +560,71 @@
         -ms-flex: 1 1 90px;
             flex: 1 1 90px;
   }
+}
+
+.scroll_intro {
+  display: none;
+  width: 100%;
+  height: auto;
+  background-color: #252526;
+  -webkit-box-shadow: 2px 2px 15px 0 rgba(37, 37, 38, 0.336);
+          box-shadow: 2px 2px 15px 0 rgba(37, 37, 38, 0.336);
+  padding: 5px 0px;
+}
+
+.scroll_intro .small_header_content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.holder_intro {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.holder_intro .search_fie {
+  width: 58%;
+}
+
+.holder_intro input {
+  width: 100%;
+  margin: 1px auto;
+  font-size: 14px;
+  padding: 3px 5px;
+  max-width: 800px;
+}
+
+.search_fie {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  max-width: 800px;
+  font-size: 17.5px;
+  margin: 30px auto;
+  display: block;
+  outline: none;
+  padding: 7.5px;
+  border-radius: 6px;
 }
 /*# sourceMappingURL=styles.css.map */
