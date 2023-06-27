@@ -73,7 +73,6 @@ function Contact(props) {
                   id=""
                   value={filterValues}
                   onChange={handleChange}
-                  onKeyUp={handleChange}
                   placeholder="Search for a Project"
                 />
               </div>
