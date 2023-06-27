@@ -6,23 +6,12 @@ import {
   FiGithub,
   FiLinkedin,
 } from "react-icons/fi";
-import {
-  FaCss3,
-  FaGit,
-  FaGoogle,
-  FaHtml5,
-  FaJs,
-  FaLink,
-  FaNodeJs,
-  FaReact,
-  FaSass,
-  FaWhatsapp,
-} from "react-icons/fa";
+import { FaGoogle, FaWhatsapp } from "react-icons/fa";
 import { BsArrowRight, BsStarFill, BsThreeDots } from "react-icons/bs";
 import { DevProjects } from "./projectslist";
 
 function Contact(props) {
-  const { devProjects } = DevProjects();
+  const { devProjects, myStacks } = DevProjects();
   const [projects, setProjects] = useState(devProjects);
 
   const [small, setSmall] = useState(false);
@@ -143,36 +132,8 @@ function Contact(props) {
             </div>
             {NotFound(projects?.length === 0)}
             <div className="projects_rack">
-              {projects.map((devProject) => (
-                <div
-                  key={devProject.project}
-                  className="project_item other_items"
-                >
-                  <div className="project_item_title">
-                    <h3>{devProject.project}</h3>
-                    <span
-                      className={`stack-icon ${
-                        devProject.stack === "Laravel"
-                          ? "laravel_color"
-                          : "react_color"
-                      }`}
-                    >
-                      {devProject.stackIMG} {devProject.stack}
-                    </span>
-                  </div>
-                  <br />
-                  <div className="project-note">
-                    <p>{devProject.projectDes}</p>
-                  </div>
-                  <a
-                    href={devProject.siteLink}
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    {" "}
-                    Visit {devProject.project} <FiArrowRight />
-                  </a>
-                </div>
+              {projects.map((devProject, index) => (
+                <ProjectBlock {...devProject} key={index} />
               ))}
 
               <div className="project_item next-project">
@@ -204,7 +165,12 @@ function Contact(props) {
           <div className="main_contact_body">
             <h2 className="headings_contact">My Stacks</h2>
             <p>Here are some of the stacks I work with more often.</p>
-            <Stacks />
+
+            <div className="stacks-cage">
+              {myStacks?.map((stack, index) => (
+                <Stacks {...stack} key={index} />
+              ))}
+            </div>
           </div>
           <div
             className="star"
@@ -222,73 +188,48 @@ function Contact(props) {
 
 export default Contact;
 
-function Stacks() {
-  const myStacks = [
-    {
-      key: "1",
-      stack: <FaReact />,
-      stackName: "React",
-      stackStar: "Core",
-    },
-    {
-      key: "2",
-      stack: <FaHtml5 />,
-      stackName: "HTML 5",
-      stackStar: "Core",
-    },
-    {
-      key: "3",
-      stack: <FaCss3 />,
-      stackName: "CSS 3",
-      stackStar: "Core",
-    },
-    {
-      key: "4",
-      stack: <FaSass />,
-      stackName: "Sass",
-      stackStar: "Core",
-    },
-    {
-      key: "5",
-      stack: <FaJs />,
-      stackName: "Javascript",
-      stackStar: "Core",
-    },
-    {
-      key: "6",
-      stack: <FaLink />,
-      stackName: "REST APIs",
-      stackStar: "Core",
-    },
-    {
-      key: "6.5",
-      stack: <FaLink />,
-      stackName: "Context APIs",
-      stackStar: "Core",
-    },
-    {
-      key: "7",
-      stack: <FaGit />,
-      stackName: "GIT",
-      stackStar: "Core",
-    },
-    {
-      key: "8",
-      stack: <FaNodeJs />,
-      stackName: "Node",
-      stackStar: "Auxilliary",
-    },
-  ];
-
+function ProjectBlock({
+  project,
+  stack,
+  stackIMG,
+  projectDes,
+  siteLink,
+  devImg,
+  devAlt,
+}) {
   return (
-    <div className="stacks-cage">
-      {myStacks.map((myStack) => (
-        <div className="stack-skills">
-          <big>{myStack.stack}</big>
-          <p>{myStack.stackName}</p>
-          <small>{myStack.stackStar}</small>
-        </div>
-      ))}
+    <div key={project} className="project_item other_items">
+      <div className="project_image">
+        <img src={devImg} alt={devAlt} />
+      </div>
+      <div className="project_item_title">
+        <h3>{project}</h3>
+        <span
+          className={`stack-icon ${
+            stack === "Laravel" ? "laravel_color" : "react_color"
+          }`}
+        >
+          {stackIMG} {stack}
+        </span>
+      </div>
+      <br />
+      <div className="project-note">
+        <p>{projectDes}</p>
+      </div>
+      <a href={siteLink} rel="noreferrer" target="_blank">
+        {" "}
+        Visit {project} <FiArrowRight />
+      </a>
+    </div>
+  );
+}
+
+function Stacks({ stack, stackName, stackStar }) {
+  return (
+    <div className="stack-skills">
+      <big>{stack}</big>
+      <p>{stackName}</p>
+      <small>{stackStar}</small>
     </div>
   );
 }
