@@ -48,7 +48,8 @@ function Contact(props) {
       condition && (
         <p style={{ lineHeight: "2rem" }}>
           No Projects Found At this Minute. <br /> Chukwuka may be working on a
-          project similar to your query, as there are other projects not listed here. Confirm from him on WhatsApp.{" "}
+          project similar to your query, as there are other projects not listed
+          here. Confirm from him on WhatsApp.{" "}
           <a rel="noreferrer" href="https://wa.link/7j9t00" target="_blank">
             Confirm Now!
           </a>
@@ -136,7 +137,7 @@ function Contact(props) {
               ))}
 
               <div
-                style={{ height: "275px" }}
+                // style={{ height: "275px" }}
                 className="project_item next-project"
               >
                 <p>Chat about your next project</p>
@@ -218,10 +219,14 @@ function ProjectBlock({
       <div className="project-note">
         <p>{projectDes}</p>
       </div>
-      <a href={siteLink} rel="noreferrer" target="_blank">
-        {" "}
-        Visit {project} <FiArrowRight />
-      </a>
+      {!siteLink ? (
+        <a href={"/"}>NDA Constrants</a>
+      ) : (
+        <a href={siteLink} rel="noreferrer" target="_blank">
+          {" "}
+          Visit {project} <FiArrowRight />
+        </a>
+      )}
     </div>
   );
 }
