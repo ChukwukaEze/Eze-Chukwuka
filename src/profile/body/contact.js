@@ -48,7 +48,7 @@ function Contact(props) {
       condition && (
         <p style={{ lineHeight: "2rem" }}>
           No Projects Found At this Minute. <br /> Chukwuka may be working on a
-          project simiar to your query. Confirm from him on WhatsApp.{" "}
+          project similar to your query, as there are other projects not listed here. Confirm from him on WhatsApp.{" "}
           <a rel="noreferrer" href="https://wa.link/7j9t00" target="_blank">
             Confirm Now!
           </a>
@@ -116,7 +116,7 @@ function Contact(props) {
 
         <div className="_contact">
           <div className="main_contact_body">
-            <h2 className="headings_contact">My Projects</h2>
+            <h2 className="headings_contact">Most Rigorous Projects</h2>
             <p>Here are some of my deeply inspiring projects.</p>
 
             <div className="search_fie">
@@ -135,7 +135,10 @@ function Contact(props) {
                 <ProjectBlock {...devProject} key={index} />
               ))}
 
-              <div className="project_item next-project">
+              <div
+                style={{ height: "275px" }}
+                className="project_item next-project"
+              >
                 <p>Chat about your next project</p>
                 <div>
                   <h3>Let's</h3>
