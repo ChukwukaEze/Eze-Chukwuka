@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import DisplayPicture from "../../images/eze-chukwuka.jpg";
+import DisplayPicture from "../images/eze-chukwuka.jpg";
 import {
   FiDownloadCloud,
   FiArrowRight,
@@ -10,7 +10,7 @@ import { FaGoogle, FaWhatsapp } from "react-icons/fa";
 import { BsArrowRight, BsStarFill, BsThreeDots } from "react-icons/bs";
 import { DevProjects } from "./projectslist";
 
-function Contact(props) {
+function Profile(props) {
   const { devProjects, myStacks } = DevProjects();
   const [projects, setProjects] = useState(devProjects);
 
@@ -189,7 +189,7 @@ function Contact(props) {
   );
 }
 
-export default Contact;
+export default Profile;
 
 function ProjectBlock({
   project,
@@ -236,7 +236,7 @@ function Stacks({ stack, stackName, stackStar }) {
     <div className="stack-skills">
       <big>{stack}</big>
       <p>{stackName}</p>
-      <small>{stackStar}</small>
+      <small>{stackStar("p")}</small>
     </div>
   );
 }

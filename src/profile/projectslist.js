@@ -9,11 +9,11 @@ import {
   FaReact,
   FaSass,
 } from "react-icons/fa";
-import Zuri from "../../images/zuri.png";
-import Gida from "../../images/gida.png";
-import NLPC from "../../images/nlpc.png";
-import AIICO from "../../images/aiico.png";
-import CHUKWUKA_NODE from "../../images/chukwuka-node.png";
+import Zuri from "../images/zuri.png";
+import Gida from "../images/gida.png";
+import NLPC from "../images/nlpc.png";
+import AIICO from "../images/aiico.png";
+import CHUKWUKA_NODE from "../images/chukwuka-node.png";
 
 export function DevProjects() {
   const devProjects = [
@@ -77,7 +77,7 @@ export function DevProjects() {
       git: "",
       siteLink: "",
       stack: "Next",
-      stackIMG: <FaReact />,
+      stackIMG: <FaReact  />,
     },
     {
       //Image Properties
@@ -86,12 +86,12 @@ export function DevProjects() {
 
       //Project Details
       project: "Chukwuka Node",
-      projectDes: `Chukwuka Node - a simple light weight npm package containing utility functions that can be used across various JS Applications`,
+      projectDes: `Chukwuka Node - a simple light weight npm package containing utility functions that can be used across various JS Applications.`,
 
       //Links
       git: "",
       siteLink: "https://www.npmjs.com/package/chukwuka-node",
-      stack: "Next",
+      stack: "Javascript",
       stackIMG: <FaReact />,
     },
   ];
