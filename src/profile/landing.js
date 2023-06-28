@@ -199,6 +199,7 @@ function ProjectBlock({
   siteLink,
   devImg,
   devAlt,
+  stackColor
 }) {
   return (
     <div key={project} className="project_item other_items">
@@ -208,11 +209,11 @@ function ProjectBlock({
       <div className="project_item_title">
         <h3>{project}</h3>
         <span
-          className={`stack-icon ${
-            stack === "Laravel" ? "laravel_color" : "react_color"
-          }`}
+        // className={`stack-icon ${
+        //   stack === "Laravel" ? "laravel_color" : "react_color"
+        // }`}
         >
-          {stackIMG} {stack}
+          {stackIMG?.(stackColor || "#61dafb")} {stack}
         </span>
       </div>
       <br />
@@ -236,7 +237,7 @@ function Stacks({ stack, stackName, stackStar }) {
     <div className="stack-skills">
       <big>{stack}</big>
       <p>{stackName}</p>
-      <small>{stackStar("p")}</small>
+      <small>{stackStar}</small>
     </div>
   );
 }

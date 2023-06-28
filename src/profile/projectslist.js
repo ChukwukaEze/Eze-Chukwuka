@@ -6,6 +6,7 @@ import {
   FaJs,
   FaLink,
   FaNodeJs,
+  FaNpm,
   FaReact,
   FaSass,
 } from "react-icons/fa";
@@ -16,6 +17,9 @@ import AIICO from "../images/aiico.png";
 import CHUKWUKA_NODE from "../images/chukwuka-node.png";
 
 export function DevProjects() {
+  // const proIcon = (prop) => (
+  //   return ...prop
+  // )
   const devProjects = [
     {
       //Image Properties
@@ -30,7 +34,7 @@ export function DevProjects() {
       git: "",
       siteLink: "https://zuri-site.web.app/",
       stack: "React",
-      stackIMG: <FaReact />,
+      stackIMG: (color) => <FaReact color={color} />,
     },
 
     {
@@ -46,7 +50,7 @@ export function DevProjects() {
       git: "",
       siteLink: "https://gida-rentals.netlify.app/",
       stack: "React",
-      stackIMG: <FaReact />,
+      stackIMG: (color) => <FaReact color={color} />,
     },
 
     {
@@ -62,7 +66,7 @@ export function DevProjects() {
       git: "",
       siteLink: "https://nlpc-pfa-demo-app.web.app/",
       stack: "React",
-      stackIMG: <FaReact />,
+      stackIMG: (color) => <FaReact color={color} />, // stackIMG: <FaReact />,
     },
     {
       //Image Properties
@@ -77,7 +81,7 @@ export function DevProjects() {
       git: "",
       siteLink: "",
       stack: "Next",
-      stackIMG: <FaReact  />,
+      stackIMG: (color) => <FaReact color={color} />,
     },
     {
       //Image Properties
@@ -92,7 +96,8 @@ export function DevProjects() {
       git: "",
       siteLink: "https://www.npmjs.com/package/chukwuka-node",
       stack: "Javascript",
-      stackIMG: <FaReact />,
+      stackIMG: (color) => <FaNpm color={color} />,
+      stackcOLOR: "red",
     },
   ];
 
