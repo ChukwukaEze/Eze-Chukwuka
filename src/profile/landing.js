@@ -10,7 +10,7 @@ import { FaGoogle, FaWhatsapp } from "react-icons/fa";
 import { BsArrowRight, BsStarFill, BsThreeDots } from "react-icons/bs";
 import { DevProjects } from "./projectslist";
 
-function Profile(props) {
+function Profile() {
   const { devProjects, myStacks } = DevProjects();
   const [projects, setProjects] = useState(devProjects);
 
