@@ -6,7 +6,6 @@ import {
   FaJs,
   FaLink,
   FaNodeJs,
-  FaNpm,
   FaReact,
   FaSass,
 } from "react-icons/fa";

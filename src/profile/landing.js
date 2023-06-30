@@ -230,7 +230,7 @@ function ProjectBlock({
         <p>{projectDes}</p>
       </div>
       {!siteLink ? (
-        <a href={"/"}></a>
+        ""
       ) : (
         <a href={siteLink} rel="noreferrer" target="_blank">
           {" "}
