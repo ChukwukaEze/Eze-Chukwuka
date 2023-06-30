@@ -1,27 +1,22 @@
 {
   "files": {
-    "main.css": "/Eze-Chukwuka/static/css/main.8aefedb5.chunk.css",
-    "main.js": "/Eze-Chukwuka/static/js/main.4c6e4bf4.chunk.js",
-    "main.js.map": "/Eze-Chukwuka/static/js/main.4c6e4bf4.chunk.js.map",
-    "runtime-main.js": "/Eze-Chukwuka/static/js/runtime-main.be6e6463.js",
-    "runtime-main.js.map": "/Eze-Chukwuka/static/js/runtime-main.be6e6463.js.map",
-    "static/js/2.f51c7e7e.chunk.js": "/Eze-Chukwuka/static/js/2.f51c7e7e.chunk.js",
-    "static/js/2.f51c7e7e.chunk.js.map": "/Eze-Chukwuka/static/js/2.f51c7e7e.chunk.js.map",
-    "static/js/3.e849c593.chunk.js": "/Eze-Chukwuka/static/js/3.e849c593.chunk.js",
-    "static/js/3.e849c593.chunk.js.map": "/Eze-Chukwuka/static/js/3.e849c593.chunk.js.map",
+    "main.css": "/Eze-Chukwuka/static/css/main.25b0cafb.css",
+    "main.js": "/Eze-Chukwuka/static/js/main.23f4a95e.js",
+    "static/js/787.4ccc1597.chunk.js": "/Eze-Chukwuka/static/js/787.4ccc1597.chunk.js",
+    "static/media/nlpc.png": "/Eze-Chukwuka/static/media/nlpc.6c3df4cf7e750c8a970e.png",
+    "static/media/zuri.png": "/Eze-Chukwuka/static/media/zuri.83843b7253a4566a47d0.png",
+    "static/media/aiico.png": "/Eze-Chukwuka/static/media/aiico.d3489af45f7808d28e94.png",
+    "static/media/gida.png": "/Eze-Chukwuka/static/media/gida.31277ffb2303bc497416.png",
+    "static/media/chukwuka-node.png": "/Eze-Chukwuka/static/media/chukwuka-node.d6604a374c6e17635f10.png",
+    "static/media/eze-chukwuka.jpg": "/Eze-Chukwuka/static/media/eze-chukwuka.7f01b092e4c300a667a8.jpg",
+    "static/media/footer.webp": "/Eze-Chukwuka/static/media/footer.3970f3b5174d705d44fb.webp",
     "index.html": "/Eze-Chukwuka/index.html",
-    "static/css/main.8aefedb5.chunk.css.map": "/Eze-Chukwuka/static/css/main.8aefedb5.chunk.css.map",
-    "static/js/2.f51c7e7e.chunk.js.LICENSE.txt": "/Eze-Chukwuka/static/js/2.f51c7e7e.chunk.js.LICENSE.txt",
-    "static/media/chukky.844eee34.png": "/Eze-Chukwuka/static/media/chukky.844eee34.png",
-    "static/media/eze-chukwuka.7f01b092.jpg": "/Eze-Chukwuka/static/media/eze-chukwuka.7f01b092.jpg",
-    "static/media/styles.css": "/Eze-Chukwuka/static/media/footer.3970f3b5.webp",
-    "static/media/jd.94a5d7f3.png": "/Eze-Chukwuka/static/media/jd.94a5d7f3.png",
-    "static/media/tedxapapa.0b163296.png": "/Eze-Chukwuka/static/media/tedxapapa.0b163296.png"
+    "main.25b0cafb.css.map": "/Eze-Chukwuka/static/css/main.25b0cafb.css.map",
+    "main.23f4a95e.js.map": "/Eze-Chukwuka/static/js/main.23f4a95e.js.map",
+    "787.4ccc1597.chunk.js.map": "/Eze-Chukwuka/static/js/787.4ccc1597.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.be6e6463.js",
-    "static/js/2.f51c7e7e.chunk.js",
-    "static/css/main.8aefedb5.chunk.css",
-    "static/js/main.4c6e4bf4.chunk.js"
+    "static/css/main.25b0cafb.css",
+    "static/js/main.23f4a95e.js"
   ]
 }
