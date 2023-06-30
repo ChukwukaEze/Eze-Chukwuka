@@ -1,17 +1,13 @@
-import React, {useState, Fragment, useViewport} from 'react'
-import Profile from './Profile'
-import ErrorProfile from './ErrorProfile'
-import './styles/profile.css'
-import './profile/styles/styles.css'
-import NewProfile from './profile/newProfile'
-
+import React from "react";
+import "./styles/profile.css";
+import "./profile/styles/styles.css";
+import Profile from "./profile/landing";
 
 function App() {
-
   return (
-    <Fragment>
-        <NewProfile/>
-    </Fragment>
+    <section className="section">
+      <Profile />
+    </section>
   );
 }
 
