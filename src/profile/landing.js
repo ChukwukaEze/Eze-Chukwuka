@@ -9,6 +9,10 @@ import {
 import { FaGoogle, FaWhatsapp } from "react-icons/fa";
 import { BsArrowRight, BsStarFill, BsThreeDots } from "react-icons/bs";
 import { DevProjects } from "./projectslist";
+import {
+  LazyLoadImage,
+} from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function Profile() {
   const { devProjects, myStacks } = DevProjects();
@@ -81,7 +85,12 @@ function Profile() {
           </div>
         )}
         <div className="intro">
-          <img src={DisplayPicture} alt="" className="display_picture" />
+          <LazyLoadImage
+            src={DisplayPicture}
+            alt="Chukwuka Eze"
+            className="display_picture"
+            effect="blur"
+          />
           <div className="name_title">
             <h3>Eze Chukwuka</h3>
             <p>Software Engineer</p>
@@ -92,7 +101,7 @@ function Profile() {
               <a
                 rel="noreferrer"
                 target="_blank"
-                href="https://docs.google.com/document/d/1b0rRMabRN6DaG52rTwsTYwEQixxn1Dn-Lt0r9qCa6mU/edit?usp=sharing"
+                href="https://docs.google.com/document/d/1ryJV4qp_Ke-iE3Zy8-xg01rdSzRd85P_APoJ4DAqhVo/edit?usp=sharing"
               >
                 <FiDownloadCloud />
               </a>
@@ -199,12 +208,12 @@ function ProjectBlock({
   siteLink,
   devImg,
   devAlt,
-  stackColor
+  stackColor,
 }) {
   return (
     <div key={project} className="project_item other_items">
       <div className="project_image">
-        <img src={devImg} alt={devAlt} />
+        <LazyLoadImage src={devImg} alt={devAlt} effect="blur" />
       </div>
       <div className="project_item_title">
         <h3>{project}</h3>
@@ -221,7 +230,7 @@ function ProjectBlock({
         <p>{projectDes}</p>
       </div>
       {!siteLink ? (
-        <a href={"/"}>NDA Constrants</a>
+        <a href={"/"}></a>
       ) : (
         <a href={siteLink} rel="noreferrer" target="_blank">
           {" "}

@@ -96,8 +96,8 @@ export function DevProjects() {
       git: "",
       siteLink: "https://www.npmjs.com/package/chukwuka-node",
       stack: "Javascript",
-      stackIMG: (color) => <FaNpm color={color} />,
-      stackcOLOR: "red",
+      stackIMG: (color) => <FaJs color={color} />,
+      stackColor: "red",
     },
   ];
 
