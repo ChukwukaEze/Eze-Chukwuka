@@ -2,13 +2,18 @@ import React from "react";
 import {
   FaCss3,
   FaGit,
+  FaGitAlt,
   FaHtml5,
   FaJs,
   FaLink,
   FaNodeJs,
+  FaNpm,
   FaReact,
   FaSass,
 } from "react-icons/fa";
+import { SiAzuredevops, SiInteractiondesignfoundation, SiRedux } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
+import { BiLogoTypescript, BiLogoJavascript } from "react-icons/bi";
 import Zuri from "../images/zuri.png";
 import Gida from "../images/gida.png";
 import NLPC from "../images/nlpc.png";
@@ -108,6 +113,12 @@ export function DevProjects() {
       stackStar: "Core",
     },
     {
+      key: "8",
+      stack: <TbBrandNextjs />,
+      stackName: "Next.js",
+      stackStar: "Core",
+    },
+    {
       key: "2",
       stack: <FaHtml5 />,
       stackName: "HTML 5",
@@ -116,7 +127,7 @@ export function DevProjects() {
     {
       key: "3",
       stack: <FaCss3 />,
-      stackName: "CSS 3",
+      stackName: "CSS",
       stackStar: "Core",
     },
     {
@@ -127,8 +138,26 @@ export function DevProjects() {
     },
     {
       key: "5",
-      stack: <FaJs />,
+      stack: <BiLogoJavascript />,
       stackName: "Javascript",
+      stackStar: "Core",
+    },
+    {
+      key: "5",
+      stack: <BiLogoTypescript />,
+      stackName: "Typescript",
+      stackStar: "Core",
+    },
+    {
+      key: "5",
+      stack: <SiAzuredevops />,
+      stackName: "Azure Devops",
+      stackStar: "Core",
+    },
+    {
+      key: "5",
+      stack: <FaGitAlt />,
+      stackName: "Git",
       stackStar: "Core",
     },
     {
@@ -144,6 +173,18 @@ export function DevProjects() {
       stackStar: "Core",
     },
     {
+      key: "8",
+      stack: <FaNpm />,
+      stackName: "NPM",
+      stackStar: "Core",
+    },
+    {
+      key: "8",
+      stack: <SiInteractiondesignfoundation />,
+      stackName: "Design Libraries",
+      stackStar: "Core",
+    },
+    {
       key: "7",
       stack: <FaGit />,
       stackName: "GIT",
@@ -154,6 +195,12 @@ export function DevProjects() {
       stack: <FaNodeJs />,
       stackName: "Node",
       stackStar: "Auxilliary",
+    },
+    {
+      key: "8",
+      stack: <SiRedux />,
+      stackName: "Redux",
+      stackStar: "Core",
     },
   ];
   return { devProjects, myStacks };
