@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Eze-Chukwuka/static/css/main.25b0cafb.css",
-    "main.js": "/Eze-Chukwuka/static/js/main.23f4a95e.js",
+    "main.js": "/Eze-Chukwuka/static/js/main.b19374bb.js",
     "static/js/787.4ccc1597.chunk.js": "/Eze-Chukwuka/static/js/787.4ccc1597.chunk.js",
     "static/media/nlpc.png": "/Eze-Chukwuka/static/media/nlpc.6c3df4cf7e750c8a970e.png",
     "static/media/zuri.png": "/Eze-Chukwuka/static/media/zuri.83843b7253a4566a47d0.png",
@@ -12,11 +12,11 @@
     "static/media/footer.webp": "/Eze-Chukwuka/static/media/footer.3970f3b5174d705d44fb.webp",
     "index.html": "/Eze-Chukwuka/index.html",
     "main.25b0cafb.css.map": "/Eze-Chukwuka/static/css/main.25b0cafb.css.map",
-    "main.23f4a95e.js.map": "/Eze-Chukwuka/static/js/main.23f4a95e.js.map",
+    "main.b19374bb.js.map": "/Eze-Chukwuka/static/js/main.b19374bb.js.map",
     "787.4ccc1597.chunk.js.map": "/Eze-Chukwuka/static/js/787.4ccc1597.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.25b0cafb.css",
-    "static/js/main.23f4a95e.js"
+    "static/js/main.b19374bb.js"
   ]
 }
