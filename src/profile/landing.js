@@ -1,51 +1,14 @@
-import React, { useState, useEffect } from "react";
-import DisplayPicture from "../images/eze-chukwuka.jpg";
-import {
-  FiDownloadCloud,
-  FiArrowRight,
-  FiGithub,
-  FiLinkedin,
-} from "react-icons/fi";
+import React from "react";
 import { FaGoogle, FaWhatsapp } from "react-icons/fa";
 import { BsArrowRight, BsStarFill, BsThreeDots } from "react-icons/bs";
-import { DevProjects } from "./projectslist";
-import {
-  LazyLoadImage,
-} from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import Search from "../components/search";
+import Header from "../components/header";
+import { ProjectBlock, Stacks } from "../components/cards";
+import { SkillsType } from "./projectslist";
 
 function Profile() {
-  const { devProjects, myStacks } = DevProjects();
-  const [projects, setProjects] = useState(devProjects);
-
-  const [small, setSmall] = useState(false);
-  const [filterValues, setFilterValues] = useState("");
-
-  //Onscroll Effect
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", () =>
-        setSmall(window.pageYOffset > 200)
-      );
-    }
-  }, []);
-
-  //OnChange
-  const handleChange = (e) => {
-    e.preventDefault();
-    setFilterValues(e.target.value);
-    const loweredInput = e.target.value.toLowerCase();
-    const filteredProjects = () =>
-      devProjects.filter((roles) => {
-        return (
-          roles.project.toLowerCase().match(loweredInput) ||
-          roles.projectDes.toLowerCase().match(loweredInput) ||
-          roles.stack.toLowerCase().match(loweredInput)
-        );
-      });
-
-    setProjects(filteredProjects());
-  };
+  const { myStacks, projects, SearchField } = Search();
 
   const NotFound = (condition) => {
     return (
@@ -65,90 +28,20 @@ function Profile() {
   return (
     <main className="contact closed">
       <div className="contact_body">
-        {small && (
-          <div className={`scroll_intro ${small && "holder_intro"}`}>
-            <div className="small_header_content">
-              <div className="name_title">
-                <h3>Eze Chukwuka</h3>
-              </div>
-              <div className="search_fie">
-                <input
-                  type="text"
-                  name="filterValue"
-                  id=""
-                  value={filterValues}
-                  onChange={handleChange}
-                  placeholder="Search for a Project"
-                />
-              </div>
-            </div>
-          </div>
-        )}
-        <div className="intro">
-          <LazyLoadImage
-            src={DisplayPicture}
-            alt="Chukwuka Eze"
-            className="display_picture"
-            effect="blur"
-          />
-          <div className="name_title">
-            <h3>Eze Chukwuka</h3>
-            <p>Software Engineer</p>
-          </div>
-
-          <div className="nav">
-            <div className="onsocials">
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://docs.google.com/document/d/1ryJV4qp_Ke-iE3Zy8-xg01rdSzRd85P_APoJ4DAqhVo/edit?usp=sharing"
-              >
-                <FiDownloadCloud />
-              </a>
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://github.com/ChukkyWang"
-              >
-                <FiGithub />
-              </a>
-
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://www.linkedin.com/in/eze-chukwuka"
-              >
-                <FiLinkedin />
-              </a>
-            </div>
-          </div>
-        </div>
-
+        <Header SearchField={<SearchField />} />
         <div className="_contact">
           <div className="main_contact_body">
             <h2 className="headings_contact">Most Rigorous Projects</h2>
             <p>Here are some of my deeply inspiring projects.</p>
 
-            <div className="search_fie">
-              <input
-                type="text"
-                name="filterValue"
-                id=""
-                value={filterValues}
-                onChange={handleChange}
-                placeholder="Search for a Project"
-              />
-            </div>
+            {SearchField()}
             {NotFound(projects?.length === 0)}
             <div className="projects_rack">
-              {projects.map((devProject, index) => (
-                <ProjectBlock {...devProject} key={index} />
+              {projects.map((devProject) => (
+                <ProjectBlock {...devProject} key={devProject?.project} />
               ))}
 
-              <div
-                // style={{ height: "275px" }}
-                className="project_item next-project"
-              >
+              <div className="project_item next-project">
                 <p>Chat about your next project</p>
                 <div>
                   <h3>Let's</h3>
@@ -178,9 +71,22 @@ function Profile() {
             <h2 className="headings_contact">My Stacks</h2>
             <p>Here are some of the stacks I work with more often.</p>
 
+            <h4>- Frontend -</h4>
             <div className="stacks-cage">
-              {myStacks?.map((stack, index) => (
-                <Stacks {...stack} key={index} />
+              {myStacks(SkillsType.Frontend)?.map((stack, index) => (
+                <Stacks {...stack} key={stack?.stackName} />
+              ))}
+            </div>
+            <h4>- Backend -</h4>
+            <div className="stacks-cage">
+              {myStacks(SkillsType.Backend)?.map((stack, index) => (
+                <Stacks {...stack} key={stack?.stackName} />
+              ))}
+            </div>
+            <h4>- Utility Tools -</h4>
+            <div className="stacks-cage">
+              {myStacks(SkillsType.Tools)?.map((stack, index) => (
+                <Stacks {...stack} key={stack?.stackName} />
               ))}
             </div>
           </div>
@@ -199,54 +105,3 @@ function Profile() {
 }
 
 export default Profile;
-
-function ProjectBlock({
-  project,
-  stack,
-  stackIMG,
-  projectDes,
-  siteLink,
-  devImg,
-  devAlt,
-  stackColor,
-}) {
-  return (
-    <div key={project} className="project_item other_items">
-      <div className="project_image">
-        <LazyLoadImage src={devImg} alt={devAlt} effect="blur" />
-      </div>
-      <div className="project_item_title">
-        <h3>{project}</h3>
-        <span
-        // className={`stack-icon ${
-        //   stack === "Laravel" ? "laravel_color" : "react_color"
-        // }`}
-        >
-          {stackIMG?.(stackColor || "#61dafb")} {stack}
-        </span>
-      </div>
-      <br />
-      <div className="project-note">
-        <p>{projectDes}</p>
-      </div>
-      {!siteLink ? (
-        ""
-      ) : (
-        <a href={siteLink} rel="noreferrer" target="_blank">
-          {" "}
-          Visit {project} <FiArrowRight />
-        </a>
-      )}
-    </div>
-  );
-}
-
-function Stacks({ stack, stackName, stackStar }) {
-  return (
-    <div className="stack-skills">
-      <big>{stack}</big>
-      <p>{stackName}</p>
-      <small>{stackStar}</small>
-    </div>
-  );
-}

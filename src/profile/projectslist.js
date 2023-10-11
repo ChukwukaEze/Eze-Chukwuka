@@ -1,7 +1,6 @@
 import React from "react";
 import {
   FaCss3,
-  FaGit,
   FaGitAlt,
   FaHtml5,
   FaJs,
@@ -11,7 +10,20 @@ import {
   FaReact,
   FaSass,
 } from "react-icons/fa";
-import { SiAzuredevops, SiInteractiondesignfoundation, SiRedux } from "react-icons/si";
+import {
+  SiAzuredevops,
+  SiElixir,
+  SiFigma,
+  SiGithub,
+  SiInteractiondesignfoundation,
+  SiJira,
+  SiMongodb,
+  SiPostgresql,
+  SiPrisma,
+  SiPython,
+  SiRedux,
+  SiZoho,
+} from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { BiLogoTypescript, BiLogoJavascript } from "react-icons/bi";
 import Zuri from "../images/zuri.png";
@@ -20,10 +32,20 @@ import NLPC from "../images/nlpc.png";
 import AIICO from "../images/aiico.png";
 import CHUKWUKA_NODE from "../images/chukwuka-node.png";
 
+export const SkillsType = {
+  Frontend: "frontend",
+  Backend: "backend",
+  Tools: "tools",
+};
+
+const SkillsLevel = {
+  Core: "core",
+  Intermediate: "intermediate",
+  Advanced: "advanced",
+  Auxilliary: "auxilliary",
+};
+
 export function DevProjects() {
-  // const proIcon = (prop) => (
-  //   return ...prop
-  // )
   const devProjects = [
     {
       //Image Properties
@@ -105,103 +127,184 @@ export function DevProjects() {
     },
   ];
 
-  const myStacks = [
-    {
-      key: "1",
-      stack: <FaReact />,
-      stackName: "React",
-      stackStar: "Core",
-    },
-    {
-      key: "8",
-      stack: <TbBrandNextjs />,
-      stackName: "Next.js",
-      stackStar: "Core",
-    },
-    {
-      key: "2",
-      stack: <FaHtml5 />,
-      stackName: "HTML 5",
-      stackStar: "Core",
-    },
-    {
-      key: "3",
-      stack: <FaCss3 />,
-      stackName: "CSS",
-      stackStar: "Core",
-    },
-    {
-      key: "4",
-      stack: <FaSass />,
-      stackName: "Sass",
-      stackStar: "Core",
-    },
-    {
-      key: "5",
-      stack: <BiLogoJavascript />,
-      stackName: "Javascript",
-      stackStar: "Core",
-    },
-    {
-      key: "5",
-      stack: <BiLogoTypescript />,
-      stackName: "Typescript",
-      stackStar: "Core",
-    },
-    {
-      key: "5",
-      stack: <SiAzuredevops />,
-      stackName: "Azure Devops",
-      stackStar: "Core",
-    },
-    {
-      key: "5",
-      stack: <FaGitAlt />,
-      stackName: "Git",
-      stackStar: "Core",
-    },
-    {
-      key: "6",
-      stack: <FaLink />,
-      stackName: "REST APIs",
-      stackStar: "Core",
-    },
-    {
-      key: "6.5",
-      stack: <FaLink />,
-      stackName: "Context APIs",
-      stackStar: "Core",
-    },
-    {
-      key: "8",
-      stack: <FaNpm />,
-      stackName: "NPM",
-      stackStar: "Core",
-    },
-    {
-      key: "8",
-      stack: <SiInteractiondesignfoundation />,
-      stackName: "Design Libraries",
-      stackStar: "Core",
-    },
-    {
-      key: "7",
-      stack: <FaGit />,
-      stackName: "GIT",
-      stackStar: "Core",
-    },
-    {
-      key: "8",
-      stack: <FaNodeJs />,
-      stackName: "Node",
-      stackStar: "Auxilliary",
-    },
-    {
-      key: "8",
-      stack: <SiRedux />,
-      stackName: "Redux",
-      stackStar: "Core",
-    },
-  ];
+  const myStacks = (skillsType) => {
+    const stacks = [
+      {
+        key: "1",
+        stack: <FaReact />,
+        stackName: "React",
+        stackStar: SkillsLevel.Core,
+        stackSkillType: SkillsType.Frontend,
+      },
+      {
+        key: "8",
+        stack: <TbBrandNextjs />,
+        stackName: "Next.js",
+        stackStar: SkillsLevel.Core,
+        stackSkillType: SkillsType.Frontend,
+      },
+      {
+        key: "8",
+        stack: <TbBrandNextjs />,
+        stackName: "Next.js APIs",
+        stackStar: SkillsLevel.Core,
+        stackSkillType: SkillsType.Backend,
+      },
+      {
+        key: "2",
+        stack: <FaHtml5 />,
+        stackName: "HTML 5",
+        stackStar: SkillsLevel.Core,
+        stackSkillType: SkillsType.Frontend,
+      },
+      {
+        key: "3",
+        stack: <FaCss3 />,
+        stackName: "CSS",
+        stackStar: SkillsLevel.Core,
+        stackSkillType: SkillsType.Frontend,
+      },
+      {
+        key: "4",
+        stack: <FaSass />,
+        stackName: "Sass",
+        stackStar: SkillsLevel.Core,
+        stackSkillType: SkillsType.Frontend,
+      },
+      {
+        key: "5",
+        stack: <BiLogoJavascript />,
+        stackName: "Javascript",
+        stackStar: SkillsLevel.Core,
+        stackSkillType: SkillsType.Frontend,
+      },
+      {
+        key: "5",
+        stack: <BiLogoTypescript />,
+        stackName: "Typescript",
+        stackStar: SkillsLevel.Core,
+        stackSkillType: SkillsType.Frontend,
+      },
+      {
+        key: "5",
+        stack: <SiAzuredevops />,
+        stackName: "Azure Devops",
+        stackStar: SkillsLevel.Core,
+        stackSkillType: SkillsType.Tools,
+      },
+      {
+        key: "5",
+        stack: <FaGitAlt />,
+        stackName: "Git",
+        stackStar: SkillsLevel.Core,
+        stackSkillType: SkillsType.Tools,
+      },
+      {
+        key: "6",
+        stack: <FaLink />,
+        stackName: "REST APIs",
+        stackStar: SkillsLevel.Core,
+        stackSkillType: SkillsType.Backend,
+      },
+      {
+        key: "8",
+        stack: <FaNpm />,
+        stackName: "NPM",
+        stackStar: SkillsLevel.Core,
+        stackSkillType: SkillsType.Tools,
+      },
+      {
+        key: "8",
+        stack: <SiInteractiondesignfoundation />,
+        stackName: "Design Libraries",
+        stackStar: SkillsLevel.Core,
+        stackSkillType: SkillsType.Tools,
+      },
+      {
+        key: "7",
+        stack: <SiGithub />,
+        stackName: "Github",
+        stackStar: SkillsLevel.Core,
+        stackSkillType: SkillsType.Tools,
+      },
+      {
+        key: "8",
+        stack: <FaNodeJs />,
+        stackName: "Node.js",
+        stackStar: SkillsLevel.Core,
+        stackSkillType: SkillsType.Backend,
+      },
+      {
+        key: "8",
+        stack: <SiRedux />,
+        stackName: "Redux",
+        stackStar: SkillsLevel.Core,
+        stackSkillType: SkillsType.Frontend,
+      },
+      {
+        key: "8",
+        stack: <SiJira />,
+        stackName: "Jira",
+        stackStar: SkillsLevel.Core,
+        stackSkillType: SkillsType.Tools,
+      },
+      {
+        key: "8",
+        stack: <SiZoho />,
+        stackName: "Zoho Sprints",
+        stackStar: SkillsLevel.Core,
+        stackSkillType: SkillsType.Tools,
+      },
+      {
+        key: "8",
+        stack: <SiPrisma />,
+        stackName: "Prisma",
+        stackStar: SkillsLevel.Core,
+        stackSkillType: SkillsType.Backend,
+      },
+      {
+        key: "8",
+        stack: <SiMongodb />,
+        stackName: "Mongo DB",
+        stackStar: SkillsLevel.Core,
+        stackSkillType: SkillsType.Backend,
+      },
+      {
+        key: "8",
+        stack: <SiPostgresql />,
+        stackName: "Postgres DB",
+        stackStar: SkillsLevel.Core,
+        stackSkillType: SkillsType.Backend,
+      },
+      {
+        key: "8",
+        stack: <SiFigma />,
+        stackName: "Figma",
+        stackStar: SkillsLevel.Core,
+        stackSkillType: SkillsType.Tools,
+      },
+
+      {
+        key: "8",
+        stack: <SiElixir />,
+        stackName: "Elixir",
+        stackStar: SkillsLevel.Auxilliary,
+        stackSkillType: SkillsType.Backend,
+      },
+      {
+        key: "8",
+        stack: <SiPython />,
+        stackName: "Python",
+        stackStar: SkillsLevel.Auxilliary,
+        stackSkillType: SkillsType.Backend,
+      },
+    ];
+
+    if (skillsType) {
+      return stacks.filter((stack) => stack.stackSkillType === skillsType);
+    }
+
+    return stacks;
+  };
   return { devProjects, myStacks };
 }

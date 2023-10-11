@@ -388,7 +388,8 @@
 }
 
 .main_contact_body > h2,
-.main_contact_body > p {
+h4,
+p {
   text-align: center;
 }
 
