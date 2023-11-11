@@ -52,7 +52,7 @@ function Header(props) {
             <a
               rel="noreferrer"
               target="_blank"
-              href="https://github.com/ChukkyWang"
+              href="https://github.com/ChukwukaEze"
             >
               <FiGithub />
             </a>
