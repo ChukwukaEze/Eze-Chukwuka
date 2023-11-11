@@ -22,7 +22,7 @@ function Header(props) {
         <div className={`scroll_intro ${small && "holder_intro"}`}>
           <div className="small_header_content">
             <div className="name_title">
-              <h3>Eze Chukwuka</h3>
+              <h3>Chukwuka Eze</h3>
             </div>
             {SearchField}
           </div>
@@ -36,7 +36,7 @@ function Header(props) {
           effect="blur"
         />
         <div className="name_title">
-          <h3>Eze Chukwuka</h3>
+          <h3>Chukwuka Eze</h3>
           <p>Software Engineer</p>
         </div>
 
