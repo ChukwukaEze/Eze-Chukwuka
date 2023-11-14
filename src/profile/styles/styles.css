@@ -524,4 +524,8 @@ input {
   padding: 17.5px;
   border-radius: 6px;
   border: none;
+}
+
+.project-note p {
+  text-align: left !important;
 }/*# sourceMappingURL=styles.css.map */
