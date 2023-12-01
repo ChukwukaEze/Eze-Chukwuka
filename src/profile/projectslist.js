@@ -31,6 +31,7 @@ import Gida from "../images/gida.png";
 import NLPC from "../images/nlpc.png";
 import AIICO from "../images/aiico.png";
 import CHUKWUKA_NODE from "../images/chukwuka-node.png";
+import AGENCY from "../images/agency.png";
 
 export const SkillsType = {
   Frontend: "frontend",
@@ -108,6 +109,22 @@ export function DevProjects() {
       siteLink: "",
       stack: "Next",
       stackIMG: (color) => <FaReact color={color} />,
+    },
+    {
+      //Image Properties
+      devImg: AGENCY,
+      devAlt: "Insurance Agency",
+
+      //Project Details
+      project: "Insurance Agency",
+      projectDes: `Insurance Agency - an simple Insurance Agency API written in Node.js, with a PostgresDB, and hosted on Render.com`,
+
+      //Links
+      git: "",
+      siteLink: "https://documenter.getpostman.com/view/16491924/2s9YeEdCiC",
+      stack: "Typescript",
+      stackIMG: (color) => <BiLogoTypescript color={color} />,
+      stackColor: "red",
     },
     {
       //Image Properties

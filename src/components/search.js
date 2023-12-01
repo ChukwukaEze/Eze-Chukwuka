@@ -29,7 +29,7 @@ function Search() {
     );
   }
 
-  return { SearchField, projects: filteredProjects, myStacks };
+  return { SearchField, filterValues, projects: filteredProjects, myStacks };
 }
 
 export default Search;
