@@ -47,7 +47,6 @@ function Profile() {
           <div className="main_contact_body">
             <h2 className="headings_contact">My Stacks</h2>
             <p>Here are some of the stacks I work with more often.</p>
-
             <h4>- Frontend -</h4>
             <div className="stacks-cage">
               {myStacks(SkillsType.Frontend)?.map((stack, index) => (
