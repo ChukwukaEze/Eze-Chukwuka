@@ -45,7 +45,8 @@ function Header(props) {
             <a
               rel="noreferrer"
               target="_blank"
-              href="https://docs.google.com/document/d/1ryJV4qp_Ke-iE3Zy8-xg01rdSzRd85P_APoJ4DAqhVo/edit?usp=sharing"
+              href="https://docs.google.com/document/d/146Wdnke9NkuEh2JNFt3rX0TiVhi8ILazPWbZr13KwsU/edit?usp=sharing"
+              // href="https://docs.google.com/document/d/1ryJV4qp_Ke-iE3Zy8-xg01rdSzRd85P_APoJ4DAqhVo/edit?usp=sharing"
             >
               <FiDownloadCloud />
             </a>
